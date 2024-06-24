@@ -44,5 +44,12 @@ public class ContactRepository {
         return contacts.length;
     }
 
+    public static String[] getAll(){
+        return Arrays.copyOf(contacts, contacts.length);
+    }
+
+    public static void clear(){
+        contacts = new String[0];
+    }
 
 }
